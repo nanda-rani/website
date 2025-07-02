@@ -77,6 +77,56 @@ nav a:hover {
     line-height: 1.4;
 }
 
+.left-column h3.section-heading {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #1e3a5f;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.interest-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.email-section {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.email-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
 .right-column {
     flex: 2;
     background: #ffffff;
@@ -134,7 +184,7 @@ footer {
 
 .scrolling-vertical li {
     padding: 5px 0;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -162,4 +212,419 @@ footer {
     100% {
         transform: translateY(-100%);
     }
+}
+
+
+
+
+#recent-talks {
+    margin-top: 40px;
+}
+
+#recent-talks h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.talk {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.talk-left {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 300px;
+}
+
+.talk-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.talk-left h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.talk-left p {
+    margin: 5px 0;
+}
+
+.talk-right img {
+    max-width: 250px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+
+.publication-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publication-list li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.pub-icon {
+    margin-right: 5px;
+}
+
+.pub-title {
+    color: #000;
+    text-decoration: none;
+}
+
+/* .pub-title:hover {
+    text-decoration: underline;
+} */
+
+.cite-button {
+    margin-left: 10px;
+    font-size: 0.9em;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+/* .citation-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1001;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.citation-popup pre {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    font-size: 0.9em;
+    max-height: 200px;
+} */
+
+.citation-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1001;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: left;  /* Ensures all text inside is left-aligned */
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.citation-popup pre {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre;
+    overflow-x: auto;
+    font-size: 0.9em;
+    max-height: 300px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+}
+
+
+
+.citation-popup button {
+    margin-top: 10px;
+    padding: 5px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+}
+
+.citation-popup button:hover {
+    background-color: #0056b3;
+}
+
+#popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+
+.link-button, .cite-button {
+    margin-left: 10px;
+    font-size: 0.9em;
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.link-button:hover, .cite-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.patent-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+.experience-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.exp-details {
+    line-height: 1.5;
+}
+
+.exp-details strong {
+    font-size: 16px;
+}
+
+.exp-year {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+.timeline-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.timeline-column {
+    flex: 1;
+    min-width: 280px;
+}
+
+.timeline {
+    position: relative;
+    margin: 15px 0;
+    padding-left: 25px;
+    border-left: 2px solid #ccc;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 4px;
+}
+
+.instructor-marker {
+    background-color: #007acc; /* Blue */
+}
+
+.ta-marker {
+    background-color: #28a745; /* Green */
+}
+
+.trainer-marker {
+    background-color: #ff8800; /* Orange */
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.exp-year {
+    color: #666;
+    font-size: 14px;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 25px;
+    border-left: 2px solid #ccc;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 4px;
+}
+
+.poster-marker {
+    background-color: #007acc; /* Blue for Poster */
+}
+
+.talk-marker {
+    background-color: #28a745; /* Green for Presenter/Talk */
+}
+
+.panel-marker {
+    background-color: #ff8800; /* Orange for Panel */
+}
+
+.keynote-marker {
+    background-color: #d63384; /* Pinkish for Keynote */
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.exp-year {
+    color: #666;
+    font-size: 14px;
+}
+
+.timeline-content a {
+    color: #007acc;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+.volunteer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.volunteer-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.vol-icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.vol-details {
+    line-height: 1.4;
+}
+
+
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.review-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+
+.skills-list {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+.skills-list strong {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
 }
