@@ -1,0 +1,165 @@
+body {
+    font-family: Georgia, serif;
+    background: #f4f7f9;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+header .container {
+    max-width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+html {
+    scroll-padding-top: 20%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 15px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2b7ec1;
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    max-width: 93%;
+    margin: 140px auto 40px;
+    padding: 20px;
+    gap: 40px;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    background: #e9eef2;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.short-bio {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.right-column {
+    flex: 2;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #1e3a5f;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+    background: #f4f7f9;
+}
+
+.news-bar-vertical {
+    background: #dbe7f2;
+    color: #1e3a5f;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid #2b7ec1;
+    margin-top: 15px;
+    height: 100px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.news-content-vertical {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-vertical {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    animation: scroll-up 10s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.news-content-vertical:hover .scrolling-vertical {
+    animation-play-state: paused;
+}
+
+.scrolling-vertical li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-icon {
+    display: inline-block;
+    margin-right: 8px;
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px #2b7ec1;
+    }
+    50% {
+        transform: scale(1.4);
+        text-shadow: 0 0 15px #2b7ec1;
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
