@@ -38,3 +38,34 @@ function copyCitation(id) {
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('popup-overlay').addEventListener('click', hideAllCitations);
 });
+function toggleMenu() {
+    const nav = document.querySelector("nav");
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "block";
+    }
+}
+
+
+function toggleMenu() {
+    const nav = document.querySelector("nav");
+    const overlay = document.getElementById("overlay");
+
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+        overlay.style.display = "none";
+    } else {
+        nav.style.display = "block";
+        overlay.style.display = "block";
+    }
+}
+
+function closeMenu() {
+    const nav = document.querySelector("nav");
+    const overlay = document.getElementById("overlay");
+
+    nav.style.display = "none";
+    overlay.style.display = "none";
+}
+
