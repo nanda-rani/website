@@ -800,3 +800,55 @@ footer {
     color: #333;
     font-size: 14px;
 }
+
+
+/* Mobile Responsiveness Fix */
+@media only screen and (max-width: 768px) {
+
+    header .container {
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .left-column, .right-column {
+        max-width: 100%;
+    }
+
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .collaborators-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row for mobile */
+        gap: 15px;
+    }
+
+    .collaborator-card {
+        width: 150px;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
