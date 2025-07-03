@@ -802,17 +802,13 @@ footer {
 }
 
 
-/* Mobile Responsiveness Fix */
 @media only screen and (max-width: 768px) {
-
-    header .container {
-        text-align: center;
-    }
 
     .main-content {
         flex-direction: column;
         max-width: 95%;
         padding: 10px;
+        margin-top: 300px; /* Increased to clear the tall header */
     }
 
     .left-column, .right-column {
@@ -821,6 +817,7 @@ footer {
 
     .left-column {
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .profile-img {
@@ -833,16 +830,8 @@ footer {
     }
 
     .collaborators-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row for mobile */
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-    }
-
-    .collaborator-card {
-        width: 150px;
-    }
-
-    .timeline-container {
-        flex-direction: column;
     }
 
     nav a {
@@ -850,5 +839,3 @@ footer {
         margin: 10px 0;
     }
 }
-
-
