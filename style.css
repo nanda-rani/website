@@ -174,8 +174,8 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    animation: scroll-up 10s linear infinite;
-    animation-delay: 1.5s;
+    animation: scroll-up 20s linear infinite;
+    animation-delay: 1.7s;
 }
 
 .news-content-vertical:hover .scrolling-vertical {
@@ -597,7 +597,7 @@ footer {
     padding-left: 20px;
     text-align: left;
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 0.95em;
 }
 
 .skills-list li {
@@ -627,4 +627,79 @@ footer {
 
 .social-icons img:hover {
     transform: scale(1.15);
+}
+
+
+
+
+/* 
+.collaborators-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.collaborator-card {
+    width: 150px;
+}
+
+
+.collaborator-info {
+    margin-top: 10px;
+    font-size: 14px;
+} */
+
+/* 
+.collaborator-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #01436f; 
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.collaborator-img:hover {
+    transform: scale(1.1);
+    border-color: #005b99; 
+}
+ */
+
+
+
+.collaborators-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exactly 4 per row */
+    gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.collaborator-card {
+    width: 220px; /* Increased width for better text layout */
+}
+
+.collaborator-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007acc;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.collaborator-img:hover {
+    transform: scale(1.1);
+}
+
+.collaborator-info {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
 }
