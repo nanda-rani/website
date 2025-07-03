@@ -804,11 +804,39 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        padding: 10px;
+        overflow: hidden; /* Prevent header from growing too much */
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 200px; /* Adjust based on header content */
+        overflow-y: auto;  /* Allow scroll inside header if needed */
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+
     .main-content {
         flex-direction: column;
         max-width: 95%;
         padding: 10px;
-        margin-top: 50vh; /* Increased to clear the tall header */
+        margin-top: 35vh;
     }
 
     .left-column, .right-column {
@@ -832,10 +860,5 @@ footer {
     .collaborators-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
     }
 }
