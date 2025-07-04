@@ -64,11 +64,12 @@ nav a:hover {
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #1e3a5f;
+    background: #eacdcd;
+    border: 3px solid #8b6363;
     margin-bottom: 15px;
 }
 
