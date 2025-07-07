@@ -424,10 +424,12 @@ footer {
     background-color: #0056b3;
 }
 
-
+.patent-list {
+    list-style: none;
+    padding-left: 0;
+}
 
 .patent-list li {
-    list-style: none;
     margin-bottom: 15px;
     line-height: 1.5;
     padding-left: 0;
