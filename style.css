@@ -425,14 +425,18 @@ footer {
 }
 
 .patent-list {
-    list-style: none;
+    list-style: none; /* Removes default bullet and padding */
     padding-left: 0;
+    margin-left: 0;
+    line-height: 1.5;
+    
 }
 
+
 .patent-list li {
-    margin-bottom: 15px;
-    line-height: 1.5;
     padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
 }
 
 
