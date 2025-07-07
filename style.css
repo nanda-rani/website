@@ -427,6 +427,7 @@ footer {
 
 
 .patent-list li {
+    list-style: none;
     margin-bottom: 15px;
     line-height: 1.5;
 }
