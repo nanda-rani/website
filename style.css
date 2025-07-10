@@ -115,7 +115,7 @@ nav a:hover {
 
 .email-section {
     margin-top: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 0.95em;
 }
 
@@ -639,6 +639,20 @@ footer {
 .skills-list strong {
     font-weight: 600;
     font-size: 15px;
+}
+
+.contact-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 20px;
 }
 
 
